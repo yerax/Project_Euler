@@ -14,7 +14,7 @@ int main () {
 
 	double timespend = (double) (end - begin) / CLOCKS_PER_SEC;
 	sprintf(buff,"Total Time: %f \n",timespend);
-  write(1,buff,strlen(buff));
+        write(1,buff,strlen(buff));
 	sprintf(buff,"Result: %d \n", sum);
 	write(1,buff,strlen(buff));
 }
