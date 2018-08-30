@@ -6,10 +6,7 @@ int main () {
 	char buff [24];
 	int sum = 0;
 	clock_t begin = clock();
-	for (int i=0; i < 1000; ++i)
-	{
-		if (i%3 == 0 || i%5 == 0) sum += i;
-	}
+	for (int i=0; i < 1000; ++i) if (i%3 == 0 || i%5 == 0) sum += i;
 	clock_t end = clock();
 
 	double timespend = (double) (end - begin) / CLOCKS_PER_SEC;
